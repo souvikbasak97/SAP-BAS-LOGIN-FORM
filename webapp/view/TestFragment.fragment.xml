@@ -1,0 +1,46 @@
+<core:FragmentDefinition xmlns:form="sap.ui.layout.form"
+xmlns="sap.m"
+xmlns:core="sap.ui.core">
+    <Dialog id="dialogID" title="Add new User" class="sapUiContentPadding">
+        <content>
+            <!--<Label text="Name"></Label>
+            <Input value=""></Input>
+            <Label text="Age"></Label>
+            <Input value=""></Input>
+            <Button text="Close" press="onCloseDialog"></Button>-->
+            <VBox >
+            <Label text="Project"></Label>
+            <Input value=""></Input>
+            <Label text="Disbursement"></Label>
+             <Input value="" ></Input>
+            <Text text="Preliminary" />
+             <Input value="" ></Input>
+            <Text text="Fee Check" />
+            <Input value="" ></Input>
+            <Text text="Created By"/>
+             <Input value="" ></Input>
+            <Text text="Last Approver"></Text>
+            <Input value=""></Input>
+            <Text text="Status"></Text>
+           <Input value=""></Input>
+            <Text text="Loan No"></Text>
+             <Input value=""></Input>
+            <Text text="Bank Details"></Text>
+         <Input value="" ></Input>
+            <Text text="Documents"></Text>
+             <Input value=""></Input>
+            <Text text="Comments"></Text>
+            <Input value="" ></Input>
+            </VBox>
+            <Bar >
+            <contentLeft>
+            <Button text="Save" type="Accept" press="onSave"></Button>
+            </contentLeft>
+            <contentRight>
+            <Button text="Cancel" type="Reject" press="onCloseDialog"></Button>
+            </contentRight>
+            </Bar>
+        </content>    
+       
+    </Dialog>
+</core:FragmentDefinition>

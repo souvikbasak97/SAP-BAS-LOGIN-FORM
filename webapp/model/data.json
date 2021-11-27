@@ -1,0 +1,43 @@
+{
+    "bankdetails":[
+        {
+            "project":"123",
+            "dis":11,
+            "effec":"abc",
+            "pre":1,
+            "fee":1,
+            "creator":"Ravi Ghosal",
+            "approver":"1st Approver",
+            "status":"1st Approver",
+            "loanno":2,
+            "bank":"HDFC",
+            "docs":""
+        },
+        {
+            "project":"456",
+            "dis":22,
+            "effec":"efg",
+            "pre":2,
+            "fee":2,
+            "creator":"Sanjay Sharma",
+            "approver":"2nd Approver",
+            "status":"2nd Approver",
+            "loanno":3,
+            "bank":"AXIS",
+            "docs":""
+        },
+        {
+            "project":"789",
+            "dis":33,
+            "effec":"ijk",
+            "pre":3,
+            "fee":3,
+            "creator":"Meenakshi Sen",
+            "approver":"1st Approver",
+            "status":"1st Approver",
+            "loanno":3,
+            "bank":"IDBI",
+            "docs":""
+        }
+    ]
+}

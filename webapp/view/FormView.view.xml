@@ -1,0 +1,53 @@
+<mvc:View
+    xmlns:cards="sap.f.cards" xmlns:form="sap.ui.layout.form"
+    controllerName="routing.controller.FormView"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    displayBlock="true"
+    xmlns="sap.m"
+>
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="" class="custom" showHeader="false">
+                    <Bar design="Header" class="h">
+                        <contentMiddle>
+                            <Label text="Login Form"></Label>
+                        </contentMiddle>
+                    </Bar>
+
+					<content>
+                    	<VBox class="sapUiSmallMarginTopBottom sapUiLargeMarginBeginEnd">
+                        <HBox justifyContent="SpaceBetween">
+                        <VBox>
+                        <Text text="Welcome to eBlotter" class="t"></Text>
+                        <Text text="OPSD4 Disbursement Order Management" class="t"></Text>
+                        <Image src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAoHCBISFRISFBYYEhISGRkSERkSGBISEhQSGBgZHBgUGBkdIS4lHB4rHxgYJjgmOC8xOjU4GiQ7QDszPy40QzEBDAwMEA8QHxISHjckJSs/NzFAPzU/NDo3Pz8/ND88NDQ0Pz8xMTQ7Pz0/OjQ/Pz89QDExNz80MzU1Pz40Pz80Ov/AABEIAKQBMwMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAAAgUDBAYBB//EAEUQAAIBAgQDBQUDCAcJAQAAAAECAAMRBBIhMQVBUQYTImFxMkJSgZGhscEHFCNDYnKSojNTc4LR4fAWJDRUZIOz0vEV/8QAGgEBAAMBAQEAAAAAAAAAAAAAAAEEBQYDAv/EACcRAQABBAEDAgcBAAAAAAAAAAABAgMEEQUhMUESURQiMmFxkaET/9oADAMBAAIRAxEAPwD6/ERAREQEREBERAREQEREBERAREQEREBERAREQEREBESuxfHcJSfu6lemlS1yhcFwOpUagesCxiYcLi6dVQ9N0qIdAyMrrfpcc5mgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICImHFYunSUvUdKdMbtUZUUfMwM0Tm6vbHDm/cJWxdvepJkpeveVCqEeYJlNje3lRDYJhqfTPiDWf5pTW380DvYny1/wAoGLOi5G/ssPXI+rMZq1/yh45dlA/foPb7IH1yJ8jw/wCVLFr7dPDv6d5QP8zH7pe4D8p+He3f0KlK+7UyuIpj6Wb+UwO/lfxfjNHCKpqMS76U6dMZ61VvhRBqfXYcyJUYrtZTqhEwGXFYiqCV9padFBvUrE2KgfDoTKTvVoM7o5r4txatiXALeaUBsiDbSBv8QxeIqa4mo2DpHVcNhWDYtwf62rsgPRbepmhR4j3IyYZKeFTcimoZ2PV3YXY+c0TckkkknUk6knqTJBYGWlxGtTq9+pGc6PpZXA5OF9oee68tLg91wriiYlMy+F1tnQkFkJ29VOtm2P1A4ILPaD1KTrUpkqy7Ea2B3FveU81+YsQDA+lxKzg3F0xK20Sqou6XuCPiQ81v8xsbSzgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiBocdxrUMPWrKMzIuZbgkA3AzEDkL3PkDKOhx6uADdKqkXBKlCQfNTb7Je8T4jSoi1TxFgctNQGdxsbL011JsNdTOJwVA0wyjRCzNTS+bu0J0TN71vT67nH5PIqtamivU+wseOdpsXkAw1FBUPtO75wg6olhmPrb0M4WjRxeIrA1M1SsTYPif0jD+zT2EH0E7CGUHQi489ZRt81dp+uIlG08N2JdwDiHLnSwrO9RR5CmhVR/EZc4fsjhk626ItOmvyyrm/mlLQd09h3S3JGIX+H2fsm/R45iE3KVB+2uRv4l0/ll+3zFmr6omDaz/2WwXOiG/feo/3tPG7J8PO+Gp/Qj7jPML2gRiqujUydLgq6A+Z0P2S7mlav27sbomJS5nEdg+Gv+oyHqj1B9hJH2Tje0vYTD0GpJh3qGvXfLTpm2YqPaYstrKPSfUsXiUpJUqOctOmpdz0UC5nzocWJNTFOD+c4oZaY/5fCC+VAfibW/zPOeoyJRTC0zhaJvf/AImoParVPhB+AbAc5qCsmbJnXP8ADmXN9N5adlMOmIquHUFEQkqb+Ik2APla/wBk4/iXBqeE4xhcPZatJ6iALUAcdzWYoVe+5Hi+gPOB0QWTCzPjsD+b1noAkqAtSkWJLCm+YZSeeVkYX6WmMLAiFkgskFkgsDEFZWDoSrKcwKkBg3xKTpfyOh2M6/gnGhXApvZa1jtcJUA3ZQdQRzXceY1nLhZF6XNdDodCV1GxBGqsOTcoH0KJQ8F43ntTqmz+yjkBRUPwsNlfy2bdeYF9AREQEREBERAREQEREBERAREQEREBETxmsCegJ08oBmABJIAGpJ0AHUmc7j+0Be64fbnVYXX/ALan2v3j4emaVFfGvi1SpUPgYB0pqf0a8wW+Nh1OgI0AgmYGbys9aLX7EAurMSWdtXZzmdj5n8NhytPQCdBqTtaZ6GHZ9tBsSdvTzPlNWtVcHEUKTd1XXwhqihSCQCp55Va9s3K9+UxoouXatz58yhkdSpKn2h7QuCRfr0kSZxy8Qr4ar+nDI1glcOuV7jQM24YgW8XvADfc31HFJUGZXDjqpvPW9hV25+wsGrqPP0mJsT0H1mvJrTY7CePoiO42cEzPURb+0yjTTcz6DOJ4FhSa1Mn3Tm+gvO2nQcPTHoqqj30lxvbzG5zRwYOlT9PiLcqKHwr/AHnH8s5N8zsTa9+g2HIfITZxHGsO9XF4h3VqlWp3NBBepUFCloCEFyMx1+sjWbFMmcIuDpf1mMIRyOqUh4mmzA9wfHf/AM5+9dcwdShQEB3B1GX0IGvrKPgJqY7idPEVmCt3i4mqScq06dOxRRfb2UUDpc8563DWdr0w9R33rVxZmHVKfur5n7Z0HCOFph0sPE7aux3Y/wCEC44riBWrPUHs2WmnmiFjf5l2Ppaa4WSCz0LA8Cz0LJhZMLAxhZMLJBZILAwPRv6+exG9j/q43EuuD8aItSrE8gjsRcE7LUPnsH57Gze1XBZF6Qb11GwOh3BB3B5iB2sTmeF8WNKyVf6MaBjcmmOpO7U/PdedxqOlBgexEQEREBERAREQEREBERAREQEREDiuLYH80qeHTD12JTpSqnUp5K2pHoRymFpvdqOP0WR8OgFYuMrN+rQjYgj2mBAItsRvylJw3F5xkY+Nf5l5NOb5XC9E/wCtEdJ7i44djO6cMdU2YbkA8x5zzj4TE1qT4fxVKfhrOLdyaJ3Rm95gdrbXPPSaplvwHEKGFNgAd0PLN0I69D5WlbCvzMfD9NTPefCFXgeEYXGMe8PetawcszMUU6KjX8IH4+s+ddqeCPg8TURabikG/Q1PEjMpAOjABWtcjTprPofEaQw+MPcMCr3qOqfqKw115We98u++ljMdbNVbPXbvW2UeyiA7hF2Hqbk8zL8ZVOJTNur5p3794HzOlxWuns1aq+T+P78038Nx/EnepUf91Bf/AMZnaVeEUW91P7ygfdNc9n6PwJ8mt+MiOSxKutVvr+IFNheMV73BxIO11sh16HKs3UpPW1qUK9df+sxTJT+hb8Z1fZvgGGOcvTR8trXuwF/naX2J4Jh3p1KS00QVEZCURAwzC1725TVxLlu5a9VunUTv7JcZgqbILI+HwwtqOH0u8qW6Gs+gPnmkzQphs6oXqf1mIbv6vyv4VPyPrKijUq4VjQrqcyAK4FycijKtdPiUqFvbUZb9Zc02DAMpDKRdSDcEdQZaBV3O5O5OpPqZILJBZMLAiFkgskFkwsCAWTCyYWTCwIBZILJBZILAgFntpkCz0LAxNTv5EagjcHqJm4bj2oEIwLU+igkqPipjmvVNx7t9oyzxkBFj/nfqDyMDpqdRXUMpDKwDKVIKsDsQRuJKcxg8S9BtPGjG7KLDMx3ZOSv1XZvI3v0VCstRQ6kFW2I8tCCORBuCNwRAyxEQEREBERAREQEREBERAT532647i6bPSKClRGgOf+lU7HQXYfs6W1vedRx7tAmG8CjPVIuAbhFB2LHn6fdPl/aDiD4t8tzUrbM21OmvTy9IDhuMFZSbWZTZh06EeU3kJUhl0ZdR/gfKaFDusMoQuA255ux65Rrab9JwwDKbqwuD1B5z5roprpmmqNxIvsNXFRQw+Y5g8xMhHy9NCPMHlKfCVDTJexKaZ+gGwb/X4S4vOOzMarHu68d4lCKUwosBYfjzPrJRJKhYgAXJ2AlSZmZEZ6VItfS4uPMdfsMveHcG2Z9eg3H+f3es0e0PCKi1UxFFWqK9kroLuVt7NRRvbkQPI9Zfo469Vam5rXtHmRa9nFsjN1a30/8Ast5p8Kw5p01U76k/Obk6PBtzRj00zGp0lXca4NSxShXurrrTdNKlNuqnp1HOfPq+Gr4Gp3bLcOSVy2FOv1anySp1TY+V59SmtxDAU8QjUqqB0bcHcHkwPI+cuDi8NWSoodDdTpzBBG6kHUEdJsBZVcV4ZWwD582emxCrUa+R+lPEW9luQqfXnLHA4paoNrq66VEa2dD59R0Ox5QM4WTCz0LJhYEQsmFkgsmFgQCyQWSCyQWBHLAWZMs9ywMeWehZkCz0LAxMgIIIuDveRou9Fi66hiM4Y2V+QzHk9rAPzsA3IjZCxkgWuGxKVFzL1swIsysN1YcjM05irifzZ6T7K57s76gAtkYe9oGKncEW2Yzp4CIiAiIgIiICIlVxTj1KhcXz1AcpRCCymxN28tvrAscTXWmjO5yogux30lBU7aYNBmdnQbeJL3PQBSST5Ti+KdrcRVD4dWFZmPiAVVppY3szAXOttPtlNTw9nGbNicS3sIovlHkNlXzgb3Hca+MrVatzRw5PhJ8NR6agKCb+wCBe2+vymClSVUzX/NsPsHI/SVD0prux/amRlVGs2XE4gahF1wtA9Xb328tvWZ8NgalVw73rVjoDbRB8KLsogV7cPSoRZDSojUqxvVqn4qrbn0nXcF7P1K1mI7umOZGpHRRLvgvZhadqlazvuF91fXrOlAtoNANrQNPC8NpU0NNVGVgVbNrmB0IbrOPxWEOFqGiSSjXbDsdSU5qT8S7eYsec7yavEMBTrqEcXCsHUjRlYcwfqPnKeZi05FvXnwOVweDeofCNOv8Ah1nTYHhyUxtc8yfxm1QoqgCqNBp5zJKuHxlFn5rnWf5CNERE1kkREBERAjVpK6sjKGRhlZWAKsDuCJwPHOAVMIe+oljQTYgZqmHXmpH6yj1G43G159AiBw/DOIrVspstS2awN0dPjpt7y/aNjLILNPj/AGYKXrYZSVB7x6KHKyvzq4c+6/Vdm2mvwni4qZUcjMxyo4GVXYboy+5UHNOe4vyC2CyQWSCyYWBELJBZILPQsCIWehZMLPQsCAWehZkCyQWBjCyQWSCyWWBScbXO+EoDepU7w+Sop1/iZB851lpzHDl77HVam6YZBRXp3hs7/ME0x8jOngIiICIiAkK1VUVnY5VUXY9BJz5dxvtlVqd5h6WWrnY7ABEUNcBnG+w0+pgd9V7QYNFzPiKajlndUJI1soNiT5T5NjcVVxbPUe+HouWdgTao4JJOY+6NdvvmAUrOpfNicS+iIouR5Kuyr57TdegqMDiLV6w1ShTN6FM8jVb32HTaBiwtG6XS2Hwo0NVxq/UUlOrnz2mdG8Jp0A1Gk3tuxviK/m7ch5TItOpWcM5NSpsigeBByCLsJ2fBOytrVMRqdwn/ALQKLgfZ+pVsEXu6Y3Y8/TqZ3vDeGU8OtkGvvMfaM3EQKAAAANgNAJ7AREQEREBERAREQEREBERAREQE5ztB2bFXPVohVrMP0iNpSrgcn+FhycaidHEDguF8WKE062YBDkZqmlSg3Ja/VelTY87HfpAslxvgaYmzqe7roCEcAG6ndHX3kPQzmcBjamFc0KqFQgu1MXcon9ZQO9Sl+z7SeYFoHTBZILPKLq6q6EMjAMpUgqwOxBmQLAiFnoWSCyQWBELJBZMLJBYEAs1eKYxcPSqVm17tbqObudEQeZYgfObwWc/VP55ihSXXD4Ns1QjZ8UNlHUIDf95l6QLHsxgGo0Fz61HJqVT8TsSzH+In5WlxPALaDQDQek9gIiICVvaLiK4XD1qzNkyrZTqTnYhVsBubkSynCflI4iinD4fV2a9UIgzO7eyll6e35QOdftJj66sO9ajh2VlbMKfeOhFiSxHg06HTrK/B0i6HuMtHDro9eoPDpypr77fZJvhgpBxNqj708NTPgXoazjf0mV89VlL620pogtTQdFUQPKLqgZMOGpq/9JWqa4it8/dXylnwTgdSsctNbJ77nb1J5mXnA+yjPapXuq7hPeb16CdpRpLTUIihVGwGggV/COC0sMPCMz83O/y6SziICIiAiIgIiICIiAiIgIiICIiAiIgIiICaHFeF08SgVwQynNTdDlqU35MjcvTYzfiBwqNXwVTI4Dd4SVC2SjiOrU76U63VNFbyJvOmweJp1VDobrsdCGVhurKdVYcwZu43CU6yNTqKHR9CD9hB5EdZx+Lw9bAuHz3pmyrWe+Vh7tLFW58lqjbncaQOrCyQWavD8clYGwKVEsKiNbOpOx03U8mGhm8FgRCyQWTCyg4pxt2ZsLgwKmIHhqVDrQw1/jI9t+iDXrbmHvHeJPmGDw5/3qoLsw1GGpHQ1W/aOyrzPkJZ8G4amFpJSUWCjW5uSdySeZJJJPMkzBwTg6YZSblqjnPVdyGqO53Zj15W2A0HMm1gIiICIiAlJx7gIxPjRxRr5RTNTJnc0wWOQG4y6sdZdxA4FewdRPYqIb7lg4J8zoZ0fBOztPDWY2qVfiI0U/sj8ZdxAREQEREBERAREQEREBERAREQEREBERAREQEREBERASL01YFWAZWBDBgCCDuCOYkogcfxHhNTCMKtIu1FL5Snjq4UHcBf1tA803G42m/S7SIqqaqPmYXVqFOriKVXo1N0B36NYjbznQzVXh9EEsqKrNq2UZcx6sBoYFAxxmOutmwWGO6hgMXUHR3FxRH7Iu3oJecN4ZSwyrTpoEVdgosBfe3meZ1J5mbqqAAALAaADQCICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgIiICIiAiIgf/Z"/>
+                        </VBox>
+                        <VBox>
+                        <form:SimpleForm editable="true" layout="ResponsiveGridLayout" adjustLabelSpan="false" labelSpanL="4"
+                        labelSpanM="4" labelSpanS="12" columnsL="1" columnsM="1" emptySpanL="4" emptySpanM="4">
+                            <form:content>
+                                <Label text="Username" required="true" class="t"></Label>
+                                <Input id="inp_usernameId" ></Input>
+                                <Label text="Password" required="true" class="t"></Label>
+                                <Input id="inp_passwordId" type="Password" value=""></Input>
+                            </form:content>
+                        </form:SimpleForm>
+                        <Bar design="SubHeader" class="custom">
+                            <contentMiddle>
+                                <Button text="Login" press="onLoginUser" type="Accept"></Button>
+                                <Button text="Cancel" press="onCancelUser" type="Reject"></Button>
+                            </contentMiddle>
+                        </Bar>
+                        </VBox>
+                        </HBox>
+                        </VBox>
+                    </content>
+                    
+                        
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

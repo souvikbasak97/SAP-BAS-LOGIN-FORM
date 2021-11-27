@@ -1,0 +1,124 @@
+<mvc:View
+    controllerName="routing.controller.TableView"
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:core="sap.ui.core"
+	xmlns="sap.m">
+    <App id="app">
+    <pages>
+    <Page class="h" title="Employee Information">
+	<Table id="idProductsTable"
+		inset="false" items="{/bankdetails}"
+		>
+		<headerToolbar>
+			<OverflowToolbar>
+				<content>
+				<!--<Title text="" level="H2"/>-->	
+                <Button text="Back" press="onReturnUser" icon="sap-icon://sys-back-2"></Button>
+                <Button text="Show User" press="onHandletoast" icon="sap-icon://account"></Button>
+				<ToolbarSpacer />
+				<Button text="Add User" icon="sap-icon://add" press="onOpenFragment"></Button>
+                    
+				</content>
+			</OverflowToolbar>
+		</headerToolbar>
+		<infoToolbar>
+			<OverflowToolbar>
+				<Label text="Banking Details"/>
+                <ComboBox id="idPopinLayout"
+						placeholder="Popin layout options"
+						change="onPopinLayoutChanged">
+						<items>
+							<core:Item  text="Borrower's Name"
+								key="Borrower"/>
+							<core:Item  text="Lender's Name"
+								key="Lender"/>
+							<core:Item  text="Account Holder's Name"
+								key="Accholder"/>
+						</items>
+				</ComboBox>
+                <Toolbar>
+				    <SearchField width="100%" placeholder="Choose your search criteria"/>
+			    </Toolbar>
+			</OverflowToolbar>
+            
+		</infoToolbar>
+		<columns>
+			<Column
+				width="12em">
+				<Text text="Project" />
+			</Column>
+			<Column
+				minScreenWidth="Tablet"
+				demandPopin="true">
+				<Text text="Disbursement" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="End">
+				<Text text="Effectiveness" />
+			</Column>
+			<Column
+				minScreenWidth="Desktop"
+				demandPopin="true"
+				hAlign="Center">
+				<Text text="Preliminary" />
+			</Column>
+			<Column
+				hAlign="Center">
+				<Text text="Fee Check" />
+			</Column>
+            <Column >
+                <Text text="Created By"/>
+            </Column>
+            <Column >
+                <Text text="Last Approver"></Text>
+            </Column>
+            <Column >
+                <Text text="Status"></Text>
+            </Column>
+            <Column>
+                <Text text="Loan No"></Text>
+            </Column>
+            <Column >
+                <Text text="Bank Details"></Text>
+            </Column>
+            <Column>
+                <Text text="Documents"></Text>
+            </Column>
+            <Column >
+                <Text text="Comments"></Text>
+            </Column>
+		</columns>
+		<items>
+			<ColumnListItem>
+				<cells>
+					<ObjectIdentifier
+						title="{Project}"
+						text="{project}"/>
+					<Text text="{dis}" />
+					<Text text="{effec}" />
+					<Text text="{pre}"></Text>
+                    <Text text="{fee}"></Text>
+                    <Text text="{creator}"></Text>
+                    <Text text="{approver}"></Text>
+                    <Text text="{status}"></Text>
+                    <Text text="{loanno}"></Text>
+                    <Text text="{bank}"></Text>
+                    <Link href="www.google.com" text="File 2"></Link>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+    <Button text="Go To Gps" press="onOpenGps"></Button>
+    <footer>
+        <Bar design="Footer">
+            <contentRight>
+                <Button text="Open Fragment" press="onOpenFragment"></Button>
+            </contentRight>
+        </Bar>
+    </footer>
+    </Page>
+    </pages>
+    </App>
+</mvc:View>
